@@ -1,0 +1,16 @@
+{
+  "name": "devq/devq",
+  "type": "application",
+  "description" : "DEVQ",
+  "homepage": "https://www.devq.io",
+  "require": {
+    "php": ">=5.5.0",
+    "doctrine/dbal": "^2.5.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.7.5"
+  },
+  "autoload": {
+    "psr-4": {"Devq\\": "classes/"}
+  }
+}

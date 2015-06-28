@@ -4,3 +4,6 @@
 # Dev Stuff
 /dev/my_vagrant.bash
 /.idea
+
+# Config
+/config/config.json
