@@ -1,3 +1,3 @@
 <html>
-<h1>DevQ</h1>
+<h1>DEVQ</h1>
 </html>

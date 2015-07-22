@@ -6,4 +6,6 @@
 /.idea
 
 # Config
-/config/config.json
+/config/config.yml
+/phinx.yml
+/run_migrations.bash

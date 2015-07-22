@@ -1,0 +1,17 @@
+
+language: php
+
+php:
+  - 5.5
+  - 5.6
+
+before_script:
+  - cp dev.phinx.yml phinx.yml
+  - cp config/travis.config.yml config/config.yml
+  - composer self-update
+  - composer install
+  - mysql -e "CREATE DATABASE devq" -uroot
+  - vendor/bin/phinx --configuration=phinx.yml.dist migrate --environment=development
+
+script:
+  - sh tests/travis.bash
