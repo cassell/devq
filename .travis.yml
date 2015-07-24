@@ -11,7 +11,7 @@ before_script:
   - composer self-update
   - composer install
   - mysql -e "CREATE DATABASE devq" -uroot
-  - vendor/bin/phinx --configuration=phinx.yml.dist migrate --environment=development
+  - vendor/bin/phinx --configuration=phinx.yml migrate --environment=development
 
 script:
   - sh tests/travis.bash
