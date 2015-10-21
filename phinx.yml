@@ -8,5 +8,5 @@ environments:
         adapter: mysql
         host: localhost
         name: devq
-        user: ~
-        pass: ~
+        user: travis
+        pass:
