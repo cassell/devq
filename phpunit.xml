@@ -11,19 +11,33 @@
     <filter>
         <blacklist>
             <directory>vendor</directory>
-            <directory>classes/OpenCFP/Provider</directory>
         </blacklist>
     </filter>
 
     <testsuites>
         <testsuite name="all">
-            <directory>tests</directory>
+            <directory>./tests/</directory>
         </testsuite>
         <testsuite name="unit">
-            <directory>tests/unit</directory>
+            <directory>./tests/unit/</directory>
         </testsuite>
         <testsuite name="integration">
-            <directory>tests/integration</directory>
+            <directory>./tests/integration/</directory>
         </testsuite>
     </testsuites>
+
+    <listeners>
+        <listener class="JohnKary\PHPUnit\Listener\SpeedTrapListener">
+            <arguments>
+                <array>
+                    <element key="slowThreshold">
+                        <integer>300</integer>
+                    </element>
+                    <element key="reportLength">
+                        <integer>5</integer>
+                    </element>
+                </array>
+            </arguments>
+        </listener>
+    </listeners>
 </phpunit>
