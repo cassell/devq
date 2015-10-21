@@ -2,10 +2,4 @@
 /vendor/
 
 # Dev Stuff
-/dev/my_vagrant.bash
 /.idea
-
-# Config
-/config/config.yml
-/phinx.yml
-/run_migrations.bash
