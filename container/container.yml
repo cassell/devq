@@ -1,0 +1,16 @@
+Environment: ~
+
+Devq\Database\Connection\DatabaseConnectionInterface:
+  class: Devq\Database\Connection\DatabaseConnection
+  arguments:
+    host: ~
+    name: ~
+    user: ~
+    password: ~
+    driver: \Doctrine\DBAL\Driver\PDOMySql\Driver
+
+Devq\Database\DatabaseInterface:
+  class: Devq\Database\Database
+  arguments:
+    connection: Devq\Database\Connection\DatabaseConnectionInterface
+

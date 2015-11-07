@@ -17,7 +17,7 @@ class Schema extends AbstractMigration
             ->addColumn('system_value', 'string', ['limit' => 100])
             ->create();
 
-        $this->execute('INSERT INTO system_key_value (system_key, system_value) VALUES (1, "DevQ");');
+        $this->execute('INSERT INTO system_key_value (system_key, system_value) VALUES (1, "devq");');
 
     }
 
