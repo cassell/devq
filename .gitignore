@@ -3,3 +3,9 @@
 
 # Dev Stuff
 /.idea
+
+# Tests Build Directory
+/tests/build
+
+# Config file
+config.yml

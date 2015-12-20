@@ -9,6 +9,7 @@ php:
 before_script:
   - composer self-update
   - composer install
+  - cp config.yml.template config.yml
   - mysql -e "CREATE DATABASE devq" -uroot
   - vendor/bin/phinx --configuration=phinx.yml migrate --environment=development
 

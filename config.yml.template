@@ -1,0 +1,10 @@
+# Environment should be dev or production
+Environment: dev
+
+# Database Credentials Here:
+Devq\Database\Connection\DatabaseConnectionInterface:
+  arguments:
+    host: 127.0.0.1
+    name: devq
+    user: travis
+    password:
